@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9046"/>
-        <plugIn identifier="com.apple.imagekit.ibplugin" version="9046"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -17,26 +16,42 @@
         <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <subviews>
-                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMT-lA-SiH">
-                    <rect key="frame" x="142" y="0.0" width="178" height="80"/>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B97-CL-XIc">
+                    <rect key="frame" x="255" y="23" width="71" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d6u-oV-GkA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e5h-lh-eWa">
+                    <rect key="frame" x="11" y="11" width="58" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="e5h-lh-eWa" secondAttribute="height" multiplier="1:1" id="uHI-kQ-HaN"/>
+                    </constraints>
+                    <animations/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Jkj-61-Kti"/>
+                </imageView>
+                <scrollView borderType="line" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMT-lA-SiH">
+                    <rect key="frame" x="79" y="6" width="193" height="68"/>
                     <clipView key="contentView" id="iqs-bS-aqk">
-                        <rect key="frame" x="1" y="1" width="161" height="78"/>
+                        <rect key="frame" x="1" y="1" width="176" height="66"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="328-2J-L15">
-                                <rect key="frame" x="0.0" y="0.0" width="161" height="78"/>
+                                <rect key="frame" x="0.0" y="0.0" width="176" height="66"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="minSize" width="161" height="78"/>
+                                <size key="minSize" width="176" height="66"/>
                                 <size key="maxSize" width="463" height="10000000"/>
                                 <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                <size key="minSize" width="161" height="78"/>
+                                <size key="minSize" width="176" height="66"/>
                                 <size key="maxSize" width="463" height="10000000"/>
                             </textView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </clipView>
                     <animations/>
                     <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="ofp-s6-Xl2">
@@ -45,28 +60,22 @@
                         <animations/>
                     </scroller>
                     <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="t2w-DE-ona">
-                        <rect key="frame" x="162" y="1" width="15" height="78"/>
+                        <rect key="frame" x="177" y="1" width="15" height="66"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </scroller>
                 </scrollView>
-                <ikImageView wantsLayer="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-tw-DXi">
-                    <rect key="frame" x="13" y="21" width="43" height="38"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="ohC-tw-DXi" secondAttribute="height" multiplier="1:1" id="SBM-nF-3Px"/>
-                    </constraints>
-                    <animations/>
-                    <color key="backgroundColor" red="0.50002289" green="0.50002289" blue="0.50002289" alpha="1" colorSpace="deviceRGB"/>
-                </ikImageView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ohC-tw-DXi" secondAttribute="bottom" constant="5" id="Emw-rR-UH5"/>
-                <constraint firstItem="ohC-tw-DXi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="Fgq-eO-nh2"/>
-                <constraint firstItem="ohC-tw-DXi" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="GKU-cy-vp6"/>
-                <constraint firstAttribute="bottom" secondItem="aMT-lA-SiH" secondAttribute="bottom" id="H90-ok-cCf"/>
-                <constraint firstAttribute="trailing" secondItem="aMT-lA-SiH" secondAttribute="trailing" id="QCh-Va-YN1"/>
-                <constraint firstItem="328-2J-L15" firstAttribute="leading" secondItem="ohC-tw-DXi" secondAttribute="trailing" constant="68" id="XCs-jX-BIj"/>
-                <constraint firstItem="aMT-lA-SiH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="rnA-qE-Jub"/>
+                <constraint firstAttribute="bottom" secondItem="e5h-lh-eWa" secondAttribute="bottom" constant="11" id="3M1-KG-XNT"/>
+                <constraint firstItem="B97-CL-XIc" firstAttribute="leading" secondItem="328-2J-L15" secondAttribute="trailing" constant="5" id="AZ1-Cv-5uK"/>
+                <constraint firstAttribute="trailing" secondItem="B97-CL-XIc" secondAttribute="trailing" id="GoS-UM-HpF"/>
+                <constraint firstAttribute="bottom" secondItem="aMT-lA-SiH" secondAttribute="bottom" constant="6" id="H90-ok-cCf"/>
+                <constraint firstItem="e5h-lh-eWa" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="11" id="Q10-9J-vti"/>
+                <constraint firstItem="B97-CL-XIc" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="T2B-cm-ApQ"/>
+                <constraint firstItem="328-2J-L15" firstAttribute="leading" secondItem="e5h-lh-eWa" secondAttribute="trailing" constant="11" id="mLU-Xs-Z1Y"/>
+                <constraint firstItem="aMT-lA-SiH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="6" id="rnA-qE-Jub"/>
+                <constraint firstItem="e5h-lh-eWa" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="11" id="xHy-LU-2Yj"/>
             </constraints>
             <animations/>
         </customView>

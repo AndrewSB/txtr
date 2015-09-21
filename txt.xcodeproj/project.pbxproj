@@ -17,6 +17,8 @@
 		469BA3801BAF9B6900964651 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469BA37E1BAF9B6900964651 /* TodayViewController.xib */; };
 		469BA3841BAF9B6900964651 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469BA3821BAF9B6900964651 /* InfoPlist.strings */; };
 		469BA3871BAF9B6900964651 /* txt widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 469BA3751BAF9B6900964651 /* txt widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		469BA38D1BAFA5FD00964651 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA38C1BAFA5FD00964651 /* RoundedImageView.swift */; };
+		469BA38F1BAFA98A00964651 /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA38E1BAFA98A00964651 /* AddressBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		469BA37F1BAF9B6900964651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
 		469BA3811BAF9B6900964651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		469BA3831BAF9B6900964651 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		469BA38C1BAFA5FD00964651 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		469BA38E1BAFA98A00964651 /* AddressBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,9 @@
 			children = (
 				469BA35E1BAF941900964651 /* AppDelegate.swift */,
 				469BA3601BAF941900964651 /* ViewController.swift */,
+				469BA38C1BAFA5FD00964651 /* RoundedImageView.swift */,
 				469BA36F1BAF96C900964651 /* Message.swift */,
+				469BA38E1BAFA98A00964651 /* AddressBook.swift */,
 				469BA3621BAF941900964651 /* Assets.xcassets */,
 				469BA3641BAF941900964651 /* Main.storyboard */,
 				469BA3671BAF941900964651 /* Info.plist */,
@@ -240,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469BA38D1BAFA5FD00964651 /* RoundedImageView.swift in Sources */,
 				469BA3611BAF941900964651 /* ViewController.swift in Sources */,
 				469BA35F1BAF941900964651 /* AppDelegate.swift in Sources */,
+				469BA38F1BAFA98A00964651 /* AddressBook.swift in Sources */,
 				469BA3701BAF96C900964651 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

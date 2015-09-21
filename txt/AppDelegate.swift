@@ -11,14 +11,10 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {        
-        do {
-            try Message.sendMessage(to: "", message: "")
-        }
-        catch Message.Error.Fuck {
-            print("sad")
-        }
-        
+    func applicationDidFinishLaunching(aNotification: NSNotification) {
+        do { try Message.send(to: "", message: "") }
+        catch Message.Error.Fuck { print("sad") }
+        catch { assertionFailure("should never get anything but a Message.Fuck.Error") }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

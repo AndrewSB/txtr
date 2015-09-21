@@ -14,7 +14,7 @@ class Message {
         case Fuck
     }
     
-    class func sendMessage(to contact: String, message: String) throws {
+    class func send(to contact: String, message: String) throws {
         
         let messageAppleScript = NSAppleScript(source: "tell application \"Messages\" to send \(message.sandwiched()) to buddy \(contact.sandwiched())")!
         
