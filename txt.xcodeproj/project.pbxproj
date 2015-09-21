@@ -11,6 +11,7 @@
 		469BA3611BAF941900964651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA3601BAF941900964651 /* ViewController.swift */; };
 		469BA3631BAF941900964651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469BA3621BAF941900964651 /* Assets.xcassets */; };
 		469BA3661BAF941900964651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469BA3641BAF941900964651 /* Main.storyboard */; };
+		469BA36E1BAF956900964651 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA36D1BAF956900964651 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		469BA3621BAF941900964651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		469BA3651BAF941900964651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		469BA3671BAF941900964651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469BA36D1BAF956900964651 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				469BA35E1BAF941900964651 /* AppDelegate.swift */,
+				469BA36D1BAF956900964651 /* StringExtensions.swift */,
 				469BA3601BAF941900964651 /* ViewController.swift */,
 				469BA3621BAF941900964651 /* Assets.xcassets */,
 				469BA3641BAF941900964651 /* Main.storyboard */,
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469BA36E1BAF956900964651 /* StringExtensions.swift in Sources */,
 				469BA3611BAF941900964651 /* ViewController.swift in Sources */,
 				469BA35F1BAF941900964651 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +276,7 @@
 				469BA36C1BAF941900964651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,10 +11,20 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+
+        let message = "hey babe"
+        let contact = "Keala Lusk"
+        let messageAppleScript = NSAppleScript(source: "tell application \"Messages\" to send \(message.sandwich()) to buddy \(contact.sandwich())")!
+    
+        var errorDict: NSDictionary?
+        messageAppleScript.executeAndReturnError(&errorDict)
+        
+        if errorDict == nil {
+            print("worked :)")
+        } else {
+            print("didn't work")
+        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
