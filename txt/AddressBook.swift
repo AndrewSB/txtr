@@ -7,9 +7,26 @@
 //
 
 import Foundation
+import AddressBook
 
 class AddressBook {
-    class func {
-        <#properties and methods#>
+    static let sharedInstance = AddressBook()
+    
+    private let internalAddressBook: ABAddressBook
+    
+    init?() {
+        return false
+//        let ab = ABAddressBookCreateWithOptions()
     }
+    
+    static var access: Bool {
+        get {
+            return ABAddressBook.sharedAddressBook() != nil
+        }
+        set {
+            ABAddressBook.sharedAddressBook()
+        }
+    }
+    
+    
 }
