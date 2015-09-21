@@ -1,0 +1,4 @@
+/* Display name and description for this extension. */
+"CFBundleDisplayName" = "woah woah";
+"com.apple.notificationcenter.widget.description" = "Sample description";
+

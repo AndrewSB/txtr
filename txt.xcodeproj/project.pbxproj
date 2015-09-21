@@ -11,8 +11,37 @@
 		469BA3611BAF941900964651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA3601BAF941900964651 /* ViewController.swift */; };
 		469BA3631BAF941900964651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469BA3621BAF941900964651 /* Assets.xcassets */; };
 		469BA3661BAF941900964651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469BA3641BAF941900964651 /* Main.storyboard */; };
-		469BA36E1BAF956900964651 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA36D1BAF956900964651 /* StringExtensions.swift */; };
+		469BA3701BAF96C900964651 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA36F1BAF96C900964651 /* Message.swift */; };
+		469BA3781BAF9B6900964651 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469BA3771BAF9B6900964651 /* NotificationCenter.framework */; };
+		469BA37D1BAF9B6900964651 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA37C1BAF9B6900964651 /* TodayViewController.swift */; };
+		469BA3801BAF9B6900964651 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469BA37E1BAF9B6900964651 /* TodayViewController.xib */; };
+		469BA3841BAF9B6900964651 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469BA3821BAF9B6900964651 /* InfoPlist.strings */; };
+		469BA3871BAF9B6900964651 /* txt widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 469BA3751BAF9B6900964651 /* txt widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		469BA3851BAF9B6900964651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469BA3531BAF941900964651 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 469BA3741BAF9B6900964651;
+			remoteInfo = "txt widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		469BA38B1BAF9B6900964651 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				469BA3871BAF9B6900964651 /* txt widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		469BA35B1BAF941900964651 /* txt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = txt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,7 +50,14 @@
 		469BA3621BAF941900964651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		469BA3651BAF941900964651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		469BA3671BAF941900964651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		469BA36D1BAF956900964651 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		469BA36F1BAF96C900964651 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		469BA3751BAF9B6900964651 /* txt widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "txt widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		469BA3771BAF9B6900964651 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		469BA37B1BAF9B6900964651 /* txt_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = txt_widget.entitlements; sourceTree = "<group>"; };
+		469BA37C1BAF9B6900964651 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		469BA37F1BAF9B6900964651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		469BA3811BAF9B6900964651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469BA3831BAF9B6900964651 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +68,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		469BA3721BAF9B6900964651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469BA3781BAF9B6900964651 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				469BA35D1BAF941900964651 /* txt */,
+				469BA3791BAF9B6900964651 /* txt widget */,
+				469BA3761BAF9B6900964651 /* Frameworks */,
 				469BA35C1BAF941900964651 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				469BA35B1BAF941900964651 /* txt.app */,
+				469BA3751BAF9B6900964651 /* txt widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +102,41 @@
 			isa = PBXGroup;
 			children = (
 				469BA35E1BAF941900964651 /* AppDelegate.swift */,
-				469BA36D1BAF956900964651 /* StringExtensions.swift */,
 				469BA3601BAF941900964651 /* ViewController.swift */,
+				469BA36F1BAF96C900964651 /* Message.swift */,
 				469BA3621BAF941900964651 /* Assets.xcassets */,
 				469BA3641BAF941900964651 /* Main.storyboard */,
 				469BA3671BAF941900964651 /* Info.plist */,
 			);
 			path = txt;
+			sourceTree = "<group>";
+		};
+		469BA3761BAF9B6900964651 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				469BA3771BAF9B6900964651 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		469BA3791BAF9B6900964651 /* txt widget */ = {
+			isa = PBXGroup;
+			children = (
+				469BA37C1BAF9B6900964651 /* TodayViewController.swift */,
+				469BA37E1BAF9B6900964651 /* TodayViewController.xib */,
+				469BA3811BAF9B6900964651 /* Info.plist */,
+				469BA3821BAF9B6900964651 /* InfoPlist.strings */,
+				469BA37A1BAF9B6900964651 /* Supporting Files */,
+			);
+			path = "txt widget";
+			sourceTree = "<group>";
+		};
+		469BA37A1BAF9B6900964651 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				469BA37B1BAF9B6900964651 /* txt_widget.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +149,34 @@
 				469BA3571BAF941900964651 /* Sources */,
 				469BA3581BAF941900964651 /* Frameworks */,
 				469BA3591BAF941900964651 /* Resources */,
+				469BA38B1BAF9B6900964651 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				469BA3861BAF9B6900964651 /* PBXTargetDependency */,
 			);
 			name = txt;
 			productName = txt;
 			productReference = 469BA35B1BAF941900964651 /* txt.app */;
 			productType = "com.apple.product-type.application";
+		};
+		469BA3741BAF9B6900964651 /* txt widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469BA3881BAF9B6900964651 /* Build configuration list for PBXNativeTarget "txt widget" */;
+			buildPhases = (
+				469BA3711BAF9B6900964651 /* Sources */,
+				469BA3721BAF9B6900964651 /* Frameworks */,
+				469BA3731BAF9B6900964651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "txt widget";
+			productName = "txt widget";
+			productReference = 469BA3751BAF9B6900964651 /* txt widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +188,9 @@
 				ORGANIZATIONNAME = "Andrew Breckenridge";
 				TargetAttributes = {
 					469BA35A1BAF941900964651 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					469BA3741BAF9B6900964651 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
@@ -112,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				469BA35A1BAF941900964651 /* txt */,
+				469BA3741BAF9B6900964651 /* txt widget */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +224,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		469BA3731BAF9B6900964651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469BA3801BAF9B6900964651 /* TodayViewController.xib in Resources */,
+				469BA3841BAF9B6900964651 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -133,13 +240,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				469BA36E1BAF956900964651 /* StringExtensions.swift in Sources */,
 				469BA3611BAF941900964651 /* ViewController.swift in Sources */,
 				469BA35F1BAF941900964651 /* AppDelegate.swift in Sources */,
+				469BA3701BAF96C900964651 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469BA3711BAF9B6900964651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469BA37D1BAF9B6900964651 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		469BA3861BAF9B6900964651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 469BA3741BAF9B6900964651 /* txt widget */;
+			targetProxy = 469BA3851BAF9B6900964651 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		469BA3641BAF941900964651 /* Main.storyboard */ = {
@@ -148,6 +271,22 @@
 				469BA3651BAF941900964651 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		469BA37E1BAF9B6900964651 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469BA37F1BAF9B6900964651 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		469BA3821BAF9B6900964651 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469BA3831BAF9B6900964651 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -238,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = txt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tfw.txt;
@@ -250,10 +390,37 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = txt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tfw.txt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		469BA3891BAF9B6900964651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "txt widget/txt_widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "txt widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.txt.txt-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		469BA38A1BAF9B6900964651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "txt widget/txt_widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "txt widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.txt.txt-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -277,6 +444,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		469BA3881BAF9B6900964651 /* Build configuration list for PBXNativeTarget "txt widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469BA3891BAF9B6900964651 /* Debug */,
+				469BA38A1BAF9B6900964651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
