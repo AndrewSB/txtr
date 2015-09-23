@@ -15,7 +15,8 @@ class AddressBook {
     private let internalAddressBook: ABAddressBook
     
     init?() {
-        return false
+        internalAddressBook = ABAddressBook()
+        return nil
 //        let ab = ABAddressBookCreateWithOptions()
     }
     
