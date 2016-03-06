@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         print(AddressBook.access)
         
-        do { try Message.send(to: "", message: "") }
+        do { try Message.send(to: "Keala Lusk", message: "Love you") }
         catch Message.Error.Fuck { print("sad") }
         catch { assertionFailure("should never get anything but a Message.Fuck.Error") }
     }

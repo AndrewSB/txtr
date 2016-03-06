@@ -9,11 +9,20 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    
+    
+    @IBOutlet weak var contactImageView: NSImageView!
+    @IBOutlet weak var recipientSearchField: NSSearchField!
 
+    @IBOutlet weak var messageTextField: NSTextField!
+    @IBOutlet weak var sendButton: NSButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     override var representedObject: AnyObject? {
